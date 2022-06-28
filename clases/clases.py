@@ -1,6 +1,15 @@
 import math
 import turtle
 class Circle:
+    """
+    Test de Circle
+    >>> r = 4
+    >>> obj = Circle(r)
+    >>> round(obj.area(),2)
+    50.27
+    >>> round(obj.perimeter(),2)
+    25.13
+    """
     def __init__(self,radius):
         self.radius = radius
         
@@ -19,3 +28,9 @@ else:
     print("El area del circulo: ", round(obj.area(),2))
     print("El perimetro del circulo: ", round(obj.perimeter(),2))     
     turtle.circle(r)
+    
+
+if __name__=="__main__":
+    import doctest
+    doctest.testmod()
+    
